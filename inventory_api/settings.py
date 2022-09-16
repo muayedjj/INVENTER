@@ -68,6 +68,7 @@ INSTALLED_APPS = [
 
     # New apps
     # 'rest_framework_simplejwt',
+    'rest_framework.authtoken',
     'rest_framework',
     'user_control',
     'app_control',
