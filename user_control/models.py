@@ -52,7 +52,6 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 class UserActivities(models.Model):
     user = models.ForeignKey(
         CustomUser, related_name="user_activities", null=True, on_delete=models.SET_NULL)
-
     email = models.EmailField()
     fullname = models.CharField(max_length=255)
     action = models.TextField()
