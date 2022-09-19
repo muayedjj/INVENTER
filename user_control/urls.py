@@ -20,4 +20,6 @@ router.register("me", MeView, 'me')
 router.register("activities-log", UserActivitiesView, 'activities log')
 router.register("users", UsersView, 'users')
 
-urlpatterns = [path("", include(router.urls))]
+urlpatterns = [
+    path("", include(router.urls))
+]
